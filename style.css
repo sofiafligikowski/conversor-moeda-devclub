@@ -91,7 +91,7 @@ section {
     font-size: 14px;
 }
 
-.coin-value {
+.coin-value, .coin-value-to-convert {
     color: #555555;
     font-weight: 700;
     font-size: 20px;

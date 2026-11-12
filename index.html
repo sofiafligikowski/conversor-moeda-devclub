@@ -25,31 +25,32 @@
 
         <label>
             Converter <b>para</b>
-            <select>
-                <option>US$ Dólar americano</option>
-                <option>€ Euro</option>
+            <select class="currency-select">
+                <option value="dolar">US$ Dólar americano</option>
+                <option value="euro">€ Euro</option>
+                <option value="yuan">¥ Yuan</option>
             </select>
         </label>
 
         <label>
             Valor
-            <input placeholder=" R$ 10.000,00">
+            <input class="input-value" placeholder=" R$ 10.000,00">
         </label>
 
-        <button>Converter</button>
+        <button id="convert-button">Converter</button>
 
         <section>
             <div class="coin-box">
                 <img src="./assets/icons8-brasil-100.png" alt="logo-moeda-a-converter">
                 <p class="coin">Real</p>
-                <p class="coin-value">R$ 0,00</p>
+                <p class="coin-value-to-convert">R$ 0,00</p>
             </div>
 
             <img src="./assets/Vector.png" alt="seta" class="arrow">
 
             <div class="coin-box">
-                <img src="./assets/icons8-eua-100.png" alt="logo-moeda-convertida">
-                <p class="coin">Dólar</p>
+                <img class="currency-img" src="./assets/icons8-eua-100.png" alt="logo-moeda-convertida">
+                <p class="coin" id="currency-name">Dólar americano</p>
                 <p class="coin-value">US$ 0,00</p>
             </div>
         </section>
